@@ -8,9 +8,13 @@
         [StructLayout(LayoutKind.Explicit)]
         public struct /*rnd*/CModelState/*rnd*/
         {
+            /*rnd_in_struct*/
+         
             // Token: 0x04000042 RID: 66
             [FieldOffset(128)]
             public long /*rnd*/m_boneArray/*rnd*/;
+
+            /*rnd_in_struct*/
         }
 
         /*junk_struct*/
@@ -18,9 +22,13 @@
         [StructLayout(LayoutKind.Explicit)]
         public struct /*rnd*/CSkeletonInstance/*rnd*/
         {
+            /*rnd_in_struct*/
+            
             // Token: 0x04000041 RID: 65
             [FieldOffset(352)]
             public /*rnd*/CModelState/*rnd*/ /*rnd*/m_modelState/*rnd*/;
+
+            /*rnd_in_struct*/
         }
 
         /*junk_struct*/
@@ -28,14 +36,22 @@
         // Token: 0x0200000E RID: 14
         public struct /*rnd*/CBoneData/*rnd*/
         {
+            /*rnd_in_struct*/
+        
             // Token: 0x04000043 RID: 67
             public /*rnd*/math/*rnd*/./*rnd*/Vec3/*rnd*/ /*rnd*/Location/*rnd*/;
+
+            /*rnd_in_struct*/
 
             // Token: 0x04000044 RID: 68
             public float /*rnd*/Scale/*rnd*/;
 
+            /*rnd_in_struct*/
+
             // Token: 0x04000045 RID: 69
             public /*rnd*/math/*rnd*/./*rnd*/Vec3/*rnd*/ /*rnd*/Rotation/*rnd*/;
+
+            /*rnd_in_struct*/
         }
 
         /*junk_struct*/
@@ -44,16 +60,24 @@
 
         public class /*rnd*/BoneVec/*rnd*/
         {
+            /*rnd_in_class*/
+        
             // Token: 0x17000002 RID: 2
             // (get) Token: 0x06000011 RID: 17 RVA: 0x00002364 File Offset: 0x00000564
             // (set) Token: 0x06000012 RID: 18 RVA: 0x0000236C File Offset: 0x0000056C
             public bool /*rnd*/Visible/*rnd*/ { get; set; }
 
+            /*rnd_in_class*/
+
             // Token: 0x0400001C RID: 28
             public /*rnd*/math/*rnd*/./*rnd*/Vec3/*rnd*/ /*rnd*/WorldPos/*rnd*/;
 
+            /*rnd_in_class*/
+
             // Token: 0x0400001D RID: 29
             public /*rnd*/math/*rnd*/./*rnd*/Vec2/*rnd*/ /*rnd*/ScreenPos/*rnd*/;
+
+            /*rnd_in_class*/
         }
 
         /*junk_class*/
@@ -61,6 +85,7 @@
         /*junk_method*/
         public static /*rnd*/BoneVec/*rnd*/[] /*rnd*/PlayerBoneArray/*rnd*/ = new /*rnd*/BoneVec/*rnd*/[/*number*/116/*number*/];
         /*junk_method*/
+
 
 
 

@@ -14,7 +14,7 @@ namespace start
 
             if (!File.Exists(filename))
             {
-                MessageBox.Show(filename + " dosyası bulunamadı.", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(filename + " dosyası bulunamadı.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(0);
             }
 

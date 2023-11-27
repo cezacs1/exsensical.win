@@ -10,11 +10,29 @@ namespace start
     {
         static void Main()
         {
-            string filename = "ExsenseV2.exe";
+            string mainname = "ExsenseV2.exe";
+            string clientdll = "client.dll";
+            string antidbg = "antidbg.dll";
+            string updater = "UpdateLocker.dll";
 
-            if (!File.Exists(filename))
+            if (!File.Exists(mainname))
             {
-                MessageBox.Show(filename + " dosyası bulunamadı.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(mainname + " dosyası bulunamadı.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Environment.Exit(0);
+            }
+            if (!File.Exists(clientdll))
+            {
+                MessageBox.Show(clientdll + " dosyası bulunamadı.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Environment.Exit(0);
+            }
+            if (!File.Exists(antidbg))
+            {
+                MessageBox.Show(antidbg + " dosyası bulunamadı.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Environment.Exit(0);
+            }
+            if (!File.Exists(updater))
+            {
+                MessageBox.Show(updater + " dosyası bulunamadı.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(0);
             }
 
@@ -22,7 +40,7 @@ namespace start
             {
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
-                    FileName = filename/*Process.GetCurrentProcess().ProcessName*/,
+                    FileName = mainname/*Process.GetCurrentProcess().ProcessName*/,
                     Verb = "runas" // Bu, işlemi yönetici izinleriyle başlatmak için gereklidir
                 };
 
